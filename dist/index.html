@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do project</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href=".././src/css/main.css">
+
+<body>
+  <!-- New Task Modal -->
+  <div class="modal fade" id="addTaskModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create Task</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-row">
+              <div class="col-md-7 form-group">
+                <label for="inputTask">Task Name</label>
+                <input class="form-control" id="inputTask" placeholder="Walk the dog" type="text" class="">
+              </div>
+              <div class="col-md-5 form-group">
+                <label for="Due Date">Due Date</label>
+                <input class="form-control" id="inputDate" type="date">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-3 form-group">
+                <label for="inputproject">project</label>
+                <select class="form-control" name="project" id="">
+                  <option value="">project 1</option>
+                  <option value="">project 1</option>
+                  <option value="">project 1</option>
+                </select>
+              </div>
+              <div class="col-md-3 form-group">
+                <label for="inputPriority">Priority</label>
+                <select class="form-control" name="Priority" id="inputPriority">
+                  <option value="high">high</option>
+                  <option value="medium">medium</option>
+                  <option value="low">low</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="submit-task-btn btn btn-primary" data-dismiss="modal">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- New project Modal -->
+<div class="modal fade" id="newprojectModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid content">
+    <div class="row">
+      <div class="projects-container col col-sm-3">
+        <button id="add-project-btn" class="btn btn-primary" data-toggle="modal" data-target="#newprojectModal">+ New project</button>
+      </div>
+
+      <div class="col-sm-9 ">
+        <div class="tasks-container">
+        </div>
+        <button class="add-task-btn btn btn-primary" data-toggle="modal" data-target="#addTaskModal">+ Add Task</button>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
